@@ -1,0 +1,193 @@
+html {
+    font-size: 62.5%; /* permite trabajar con medidas relativas en toda la página, en particular, rem = 10px */
+    font-family: arial,sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.body-content {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* crea una plantilla de tres secciones, tamaño automático, full y automático */
+    height: 100vh; /* permite que el contenido del body complete la pantalla */
+}
+
+/*--------- Header */
+
+.header {
+    padding: 0.4rem;
+}
+
+.menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-mobile, .menu-links, .menu-functions {
+    align-items: center;
+    display: flex;
+}
+
+.menu-links {
+    display: none;
+}
+
+.menu-item--todo, .menu-item--imagen {
+    color: #70757a;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-right: 0.8rem;
+    padding: 0 0.8rem;
+}
+
+.menu-item--menu {
+    padding: 12px;
+}
+
+.menu-item-container { /* configura contenedor de icono e imagen, para poder usar background */
+    align-items: center;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin: 0.8rem;
+    padding: 0.5rem;
+}
+
+.menu-item-container:hover {
+    background-color: rgba(60,64,67,.08);
+    cursor: pointer;
+}
+
+.menu-item--app {
+    color: #5f6368;
+}
+
+.menu-item--profile {
+    border-radius: 50px;
+}
+
+/*--------- Main */
+
+.main-container { /* permite que el contenido del main quede centrado */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6.5rem;
+    width: 100%;
+}
+
+.main-actions { /* permite ajustar el ancho del contenido príncipal, así como su distribución */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 582px;
+    padding: 2rem 0;
+    width: 90%;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    max-width: 272px;
+    width: 50%;
+}
+
+.search { /* permite configurar la barra de búsqueda */
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 55rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+.search:hover {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+}
+
+.search-icon-glass, .search-icon-micro {
+    color: #9aa0a6;
+}
+
+.search-icon-micro:hover {
+    color: #004081;
+    cursor: pointer;
+}
+
+.textfield {
+    border: none;
+    font-size: 1.6rem;
+    height: 100%;
+    margin: 0px 1rem;
+    width: 100%;
+}
+
+.textfield:focus {
+    outline: none;
+}
+
+.buttons-container {
+    display: none;
+}
+
+.powered {
+    color: #4d5156;
+    font-size: 1.3rem;
+    line-height: 2.8rem;
+    margin: 0;
+    text-align: center;
+    width: 75%;
+}
+
+.language {
+    color: #1a0dab;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: 0 0.3rem;
+}
+
+.language:hover{
+    text-decoration: underline;
+}
+
+/*--------- Footer */
+
+.footer-1, .footer-2 {
+    background-color: #f2f2f2;
+    line-height: 3.5rem;
+    padding: 1rem;
+}
+
+.footer-2 { /* permite que el contenido del segundo footer quede separado, un div a la izquierda y otro a la derecha */
+    align-items: center;
+    border-top: 1px solid #dadce0;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-services, .footer-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-item {
+    color: #70757a;
+    font-size: 1.4rem;
+    margin: 0px 15px;
+}
+
+.footer-2 .footer-item:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}

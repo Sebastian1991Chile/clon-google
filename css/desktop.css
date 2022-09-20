@@ -1,0 +1,73 @@
+/*--------- Header */
+
+.header {
+    display: flex;
+    justify-content: flex-end; /* permite que el contenido del header quede a la derecha */
+    padding: 0.5rem 0.8rem;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+.menu-links {
+    display: inline-flex;
+    margin-right: 2rem;
+}
+
+.menu-item--gmail, .menu-item--imagenes {
+    color: rgba(0,0,0,.87);
+    font-size: 1.3rem;
+    margin-left: 1.5rem;
+}
+
+.menu-item--gmail:hover, .menu-item--imagenes:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/*--------- Main */
+
+.buttons-container {
+    display: inline-flex;
+}
+
+.button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:hover{
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/*--------- Footer */
+
+.footer-1, .footer-2 {
+    line-height: normal;
+    padding: 1.5rem;
+}
+
+.footer-2 { /* permite que el contenido del segundo footer quede separado, un div a la izquierda y otro a la derecha */
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-services, .footer-actions {
+    display: inline-flex; /* permite que las palabras queden en row y no en column */
+}
